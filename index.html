@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +31,51 @@
       margin: 1rem 0;
       border: none;
       border-top: 1px solid #ddd;
+    }
+  
+    /* Estilos carrusel */
+    .card img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .categoria {
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .titulo {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    /* Estilos sección moda */
+    .main-article {
+      position: relative;
+      color: white;
+    }
+    .main-article img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .overlay-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+    .overlay-text h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .autor-fecha {
+      font-size: 0.8rem;
+      color: #666;
+    }
+    .small-article img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -101,5 +146,139 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
           crossorigin="anonymous"></script>
+
+  <!-- Carrusel estilo revista -->
+  <div class="container my-5">
+    <h3 class="mb-4">CHLOË SEVIGNY, MUSA DE TODO</h3>
+
+    <div id="carruselRevista" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card border-0">
+                <img src="Foto carrusel segundario 1 .webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="categoria">Moda</p>
+                  <h5 class="titulo">El estilo de Chloë Sevigny, la chica más ‘cool’ del mundo desde 1994</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card border-0">
+                <img src="foto carrusel segundario 2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="categoria">Tendencias</p>
+                  <h5 class="titulo">Looks de Chloë Sevigny (de hace 20 años) con los que nos iríamos de fiesta hoy</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card border-0">
+                <img src="foto carrusel segundario 3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="categoria">Cine y Series</p>
+                  <h5 class="titulo">Los 5 mejores papeles de Chloë Sevigny</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card border-0">
+                <img src="foto carrusel segundario 4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="categoria">Iconos</p>
+                  <h5 class="titulo">9 de los mejores looks de Chloë hasta la fecha</h5>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselRevista" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselRevista" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Sección Moda -->
+  <div class="container my-5">
+    <h5 class="mb-4">MODA</h5>
+    <div class="row g-4">
+
+      <!-- Artículo principal -->
+      <div class="col-md-6">
+        <div class="main-article">
+          <img src="foto 5.webp" alt="Moda principal">
+          <div class="overlay-text">
+            <p class="categoria">Pasarelas</p>
+            <h2>Todo lo que va a pasar en la semana de la moda de Milán</h2>
+            <p class="autor-fecha">Por Lucy Maguire</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Noticias laterales -->
+      <div class="col-md-6">
+        <div class="row g-4">
+
+          <div class="col-md-12">
+            <div class="small-article">
+              <img src="FOTO 6.jpeg" alt="Noticia 1">
+              <p class="categoria mt-2">Tendencias</p>
+              <h5>Vestidos sobre vaqueros, la combinación 'Y2K' a la que será imposible resistirse este otoño</h5>
+              <p class="autor-fecha">Por María Munsuri · 20 de septiembre de 2025</p>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="small-article">
+              <img src="FOTO 7.jpeg" alt="Noticia 2">
+              <p class="categoria mt-2">Tendencias</p>
+              <h5>6 tendencias imprescindibles para este otoño 2025, según el 'street style' de Nueva York</h5>
+              <p class="autor-fecha">Por María Munsuri · 20 de septiembre de 2025</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="small-article">
+              <img src="FOTO 8.jpeg" alt="Noticia 3">
+              <p class="categoria mt-2">Tendencias</p>
+              <h6>Otra nota con estilo y moda urbana</h6>
+              <p class="autor-fecha">Por María Munsuri</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="small-article">
+              <img src="FOTO 9.jpeg" alt="Noticia 4">
+              <p class="categoria mt-2">Tendencias</p>
+              <h6>Street style: los mejores looks vistos en Milán</h6>
+              <p class="autor-fecha">Por María Munsuri</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
