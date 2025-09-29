@@ -1,10 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replica Vogue</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+  <style>
+    .section-hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .section-hero .hero-meta {
+      font-size: 0.85rem;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .section-hero .hero-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-top: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+    .section-hero hr {
+      margin: 1rem 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <!-- Encabezado -->
+  <header class="border-bottom">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center py-2">
+        <!-- Icono menú hamburguesa -->
+        <button class="btn border-0">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo centrado -->
+        <h1 class="m-0 text-center fw-bold" style="font-family: 'Times New Roman', serif; font-size: 2rem;">
+          VOGUE <br><span style="font-size: 0.8rem; letter-spacing: 2px;">SPAIN</span>
+        </h1>
+
+        <!-- Botones derecha -->
+        <div>
+          <a href="#" class="text-decoration-none me-3">SUSCRIBIRSE</a>
+          <a href="#" class="text-decoration-none me-3">REGISTRARSE</a>
+          <a href="#"><i class="bi bi-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav class="border-top">
+      <ul class="nav justify-content-center small fw-bold text-uppercase">
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Moda</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Belleza</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Compras</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Pasarelas</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Celebrities</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">TV</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Novias</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Líderes</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Vogue Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--  sección promo  -->
+  <section class="text-center my-5">
+    <img src="imagen de promocion principio.webp" class="rounded mb-2" alt="Promo">
+    <p>Antes de estar de moda, está en la newsletter de Vogue</p>
+    <a href="#" class="btn btn-dark">SUSCRÍBETE AQUÍ</a>
+  </section>
+  <section class="section-hero container my-5">
+    <div class="row">
+      <div class="col-12">
+        <img src="portada.webp" alt="Imagen destacada">
+      </div>
+    </div>
+    <div class="row hero-info">
+      <div class="col-12">
+        <div class="hero-meta">Salud (y estética) dental</div>
+        <div class="hero-title">
+          Autoestima, éxito, relaciones… Qué promesas esconde el ‘boom’ de la sonrisa perfecta
+        </div>
+        <hr>
+        <div class="hero-meta">Por Violeta Valdés — 29 de septiembre de 2025</div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
 </body>
 </html>
